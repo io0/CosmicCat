@@ -1,0 +1,35 @@
+body {
+	background-image: url('./background.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+   	 -webkit-background-size: cover;
+ 	 -moz-background-size: cover;
+  	background-size: cover;
+	margin: 0;
+	overflow-x: hidden;
+}
+.centerImage
+{
+    display: block;
+    margin: auto;
+    margin-top: 60px;
+    /*margin: 0 auto;*/
+}
+.semi-transparent-button {
+  display: block;
+  box-sizing: border-box;
+  padding: 8px;
+  width: 80%;
+  max-width: 100px;
+  background: #fff; /* fallback color for old browsers */
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  border:none;
+  color: white;
+  text-decoration: none;
+  letter-spacing: 1px;
+  position:absolute;
+  left: 70%;
+  top: 50%;
+  z-index: 10;
+}

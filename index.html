@@ -1,0 +1,30 @@
+<html>
+<head>
+	<meta charset ="utf-8"/>
+	<link rel="stylesheet" type="text/css"href="cat.css">
+	<title> Beheading </title>
+	<script type="text/javascript">
+
+		var image_tracker = 'c';
+		function behead(){
+			var image = document.getElementById('cat_image');
+			var button = document.getElementById('button');
+
+			if (image_tracker == 'c'){
+				image.src = "beheaded.svg";
+				button.innerHTML = "Unbehead";
+				image_tracker = 'b';
+			} else {
+				image.src = "cat.svg";
+				button.innerHTML = "Behead";
+				image_tracker = 'c';
+			}
+		}
+
+	</script>
+</head>
+<body>
+	<img src="cat.svg" alt="huh" id="cat_image" class="centerImage">
+	<button class="semi-transparent-button" id="button" onclick="behead();">Behead</button>
+</body>
+</html>
